@@ -1,0 +1,2 @@
+class CharacterQuestionsController < ApplicationController
+end

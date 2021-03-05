@@ -1,0 +1,2 @@
+class Homeworld < ApplicationRecord
+end

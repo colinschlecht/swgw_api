@@ -1,0 +1,2 @@
+class HomeworldsController < ApplicationController
+end
