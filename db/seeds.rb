@@ -7,29 +7,22 @@ require 'json'
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #Be sure to seed home_world and species before characters.
 
-def seed_questions
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    Category.create()
-    
 
-    "name"
-    "gender"
-    "skin_tone"
-    "height"
-    "eye_color"
-    "hair_color"
-    "mass"
-    "homeworld"
-    "species"
-    "birth_year"
+def seed_questions
     
+end
+
+def seed_categories
+    Category.create(name: "Name")
+    Category.create(name: "Gender")
+    Category.create(name: "Skin tone")
+    Category.create(name: "Height")
+    Category.create(name: "Eye color")
+    Category.create(name: "Hair color")
+    Category.create(name: "Mass")
+    Category.create(name: "Home world")
+    Category.create(name: "Species")
+    Category.create(name: "Birth year")
 end
 
 
@@ -73,6 +66,7 @@ def seed_characters
     end
 end
 
+seed_categories
 # seed_home_world
 # seed_species
 
