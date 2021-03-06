@@ -4,7 +4,7 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :image
       t.string :gender
-      t.string :skin_color
+      t.string :skin_tone
       t.integer :height
       t.string :eye_color
       t.string :hair_color

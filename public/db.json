@@ -15,7 +15,7 @@
       "mass": "77",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "19BBY",
+      "birth_year": "19",
       "image": "luke_skywalker.jpg"
     },
     "model": "resources.people",
@@ -34,7 +34,7 @@
       "mass": "75",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "112BBY",
+      "birth_year": "30",
       "image": "c-3po.jpg"
     },
     "model": "resources.people",
@@ -53,7 +53,7 @@
       "mass": "32",
       "homeworld_id": 8,
       "species_id": 8,
-      "birth_year": "33BBY",
+      "birth_year": "33",
       "image": "r2-d2.jpg"
     },
     "model": "resources.people",
@@ -72,7 +72,7 @@
       "mass": "136",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "41.9BBY",
+      "birth_year": "41.9",
       "image": "darth_vader.jpg"
     },
     "model": "resources.people",
@@ -91,7 +91,7 @@
       "mass": "49",
       "homeworld_id": 2,
       "species_id": 2,
-      "birth_year": "19BBY",
+      "birth_year": "19",
       "image": "leia_organa.jpg"
     },
     "model": "resources.people",
@@ -110,7 +110,7 @@
       "mass": "120",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "52BBY",
+      "birth_year": "52",
       "image": "owen_lars.jpg"
     },
     "model": "resources.people",
@@ -129,7 +129,7 @@
       "mass": "75",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "47BBY",
+      "birth_year": "47",
       "image": "beru_whitesun_lars.jpg"
     },
     "model": "resources.people",
@@ -167,7 +167,7 @@
       "mass": "84",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "24BBY",
+      "birth_year": "24",
       "image": "biggs_darklighter.jpg"
     },
     "model": "resources.people",
@@ -186,7 +186,7 @@
       "mass": "77",
       "homeworld_id": 20,
       "species_id": 20,
-      "birth_year": "57BBY",
+      "birth_year": "57",
       "image": "obi-wan_kenobi.jpg"
     },
     "model": "resources.people",
@@ -205,7 +205,7 @@
       "mass": "84",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "41.9BBY",
+      "birth_year": "41.9",
       "image": "anakin_skywalker.jpg"
     },
     "model": "resources.people",
@@ -224,7 +224,7 @@
       "mass": "unknown",
       "homeworld_id": 21,
       "species_id": 21,
-      "birth_year": "64BBY",
+      "birth_year": "64",
       "image": "wilhuff_tarkin.jpg"
     },
     "model": "resources.people",
@@ -243,7 +243,7 @@
       "mass": "112",
       "homeworld_id": 14,
       "species_id": 14,
-      "birth_year": "200BBY",
+      "birth_year": "200",
       "image": "chewbacca.jpg"
     },
     "model": "resources.people",
@@ -262,7 +262,7 @@
       "mass": "80",
       "homeworld_id": 22,
       "species_id": 22,
-      "birth_year": "29BBY",
+      "birth_year": "29",
       "image": "han_solo.jpg"
     },
     "model": "resources.people",
@@ -281,7 +281,7 @@
       "mass": "74",
       "homeworld_id": 23,
       "species_id": 23,
-      "birth_year": "44BBY",
+      "birth_year": "44",
       "image": "greedo.jpg"
     },
     "model": "resources.people",
@@ -300,7 +300,7 @@
       "mass": "1,358",
       "homeworld_id": 24,
       "species_id": 24,
-      "birth_year": "600BBY",
+      "birth_year": "600",
       "image": "jabba_desilijic_tiure.jpg"
     },
     "model": "resources.people",
@@ -319,7 +319,7 @@
       "mass": "77",
       "homeworld_id": 22,
       "species_id": 22,
-      "birth_year": "21BBY",
+      "birth_year": "21",
       "image": "wedge_antilles.jpg"
     },
     "model": "resources.people",
@@ -357,7 +357,7 @@
       "mass": "17",
       "homeworld_id": 28,
       "species_id": 28,
-      "birth_year": "896BBY",
+      "birth_year": "896",
       "image": "yoda.jpg"
     },
     "model": "resources.people",
@@ -376,7 +376,7 @@
       "mass": "75",
       "homeworld_id": 8,
       "species_id": 8,
-      "birth_year": "82BBY",
+      "birth_year": "82",
       "image": "palpatine.jpg"
     },
     "model": "resources.people",
@@ -395,7 +395,7 @@
       "mass": "78.2",
       "homeworld_id": 10,
       "species_id": 10,
-      "birth_year": "31.5BBY",
+      "birth_year": "31.5",
       "image": "boba_fett.jpg"
     },
     "model": "resources.people",
@@ -414,7 +414,7 @@
       "mass": "140",
       "homeworld_id": 28,
       "species_id": 28,
-      "birth_year": "15BBY",
+      "birth_year": "15",
       "image": "ig-88.jpg"
     },
     "model": "resources.people",
@@ -433,7 +433,7 @@
       "mass": "113",
       "homeworld_id": 29,
       "species_id": 29,
-      "birth_year": "53BBY",
+      "birth_year": "53",
       "image": "bossk.jpg"
     },
     "model": "resources.people",
@@ -452,7 +452,7 @@
       "mass": "79",
       "homeworld_id": 30,
       "species_id": 30,
-      "birth_year": "31BBY",
+      "birth_year": "31",
       "image": "lando_calrissian.jpg"
     },
     "model": "resources.people",
@@ -471,7 +471,7 @@
       "mass": "79",
       "homeworld_id": 6,
       "species_id": 6,
-      "birth_year": "37BBY",
+      "birth_year": "37",
       "image": "lobot.jpg"
     },
     "model": "resources.people",
@@ -490,7 +490,7 @@
       "mass": "83",
       "homeworld_id": 31,
       "species_id": 31,
-      "birth_year": "41BBY",
+      "birth_year": "41",
       "image": "ackbar.jpg"
     },
     "model": "resources.people",
@@ -509,7 +509,7 @@
       "mass": "unknown",
       "homeworld_id": 32,
       "species_id": 32,
-      "birth_year": "48BBY",
+      "birth_year": "48",
       "image": "mon_mothma.jpg"
     },
     "model": "resources.people",
@@ -547,7 +547,7 @@
       "mass": "20",
       "homeworld_id": 7,
       "species_id": 7,
-      "birth_year": "8BBY",
+      "birth_year": "8",
       "image": "wicket_systri_warrick.jpg"
     },
     "model": "resources.people",
@@ -585,7 +585,7 @@
       "mass": "89",
       "homeworld_id": 28,
       "species_id": 28,
-      "birth_year": "92BBY",
+      "birth_year": "92",
       "image": "qui-gon_jinn.jpg"
     },
     "model": "resources.people",
@@ -623,7 +623,7 @@
       "mass": "unknown",
       "homeworld_id": 9,
       "species_id": 9,
-      "birth_year": "91BBY",
+      "birth_year": "91",
       "image": "finis_valorum.jpg"
     },
     "model": "resources.people",
@@ -642,7 +642,7 @@
       "mass": "45",
       "homeworld_id": 8,
       "species_id": 8,
-      "birth_year": "46BBY",
+      "birth_year": "46",
       "image": "padme_amidala.jpg"
     },
     "model": "resources.people",
@@ -661,7 +661,7 @@
       "mass": "66",
       "homeworld_id": 8,
       "species_id": 8,
-      "birth_year": "52BBY",
+      "birth_year": "52",
       "image": "jar_jar_binks.jpg"
     },
     "model": "resources.people",
@@ -775,7 +775,7 @@
       "mass": "unknown",
       "homeworld_id": 8,
       "species_id": 8,
-      "birth_year": "62BBY",
+      "birth_year": "62",
       "image": "quarsh_panaka.jpg"
     },
     "model": "resources.people",
@@ -794,7 +794,7 @@
       "mass": "unknown",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "72BBY",
+      "birth_year": "72",
       "image": "shmi_skywalker.jpg"
     },
     "model": "resources.people",
@@ -813,7 +813,7 @@
       "mass": "80",
       "homeworld_id": 36,
       "species_id": 36,
-      "birth_year": "54BBY",
+      "birth_year": "54",
       "image": "darth_maul.jpg"
     },
     "model": "resources.people",
@@ -851,7 +851,7 @@
       "mass": "55",
       "homeworld_id": 37,
       "species_id": 37,
-      "birth_year": "48BBY",
+      "birth_year": "48",
       "image": "ayla_secura.jpg"
     },
     "model": "resources.people",
@@ -946,7 +946,7 @@
       "mass": "84",
       "homeworld_id": 42,
       "species_id": 42,
-      "birth_year": "72BBY",
+      "birth_year": "72",
       "image": "mace_windu.jpg"
     },
     "model": "resources.people",
@@ -965,7 +965,7 @@
       "mass": "82",
       "homeworld_id": 43,
       "species_id": 43,
-      "birth_year": "92BBY",
+      "birth_year": "92",
       "image": "ki-adi-mundi.jpg"
     },
     "model": "resources.people",
@@ -1079,7 +1079,7 @@
       "mass": "80",
       "homeworld_id": 49,
       "species_id": 49,
-      "birth_year": "22BBY",
+      "birth_year": "22",
       "image": "plo_koon.jpg"
     },
     "model": "resources.people",
@@ -1155,7 +1155,7 @@
       "mass": "unknown",
       "homeworld_id": 1,
       "species_id": 1,
-      "birth_year": "82BBY",
+      "birth_year": "82",
       "image": "cliegg_lars.jpg"
     },
     "model": "resources.people",
@@ -1193,7 +1193,7 @@
       "mass": "56.2",
       "homeworld_id": 51,
       "species_id": 51,
-      "birth_year": "58BBY",
+      "birth_year": "58",
       "image": "luminara_unduli.jpg"
     },
     "model": "resources.people",
@@ -1212,7 +1212,7 @@
       "mass": "50",
       "homeworld_id": 51,
       "species_id": 51,
-      "birth_year": "40BBY",
+      "birth_year": "40",
       "image": "barriss_offee.jpg"
     },
     "model": "resources.people",
@@ -1250,7 +1250,7 @@
       "mass": "80",
       "homeworld_id": 52,
       "species_id": 52,
-      "birth_year": "102BBY",
+      "birth_year": "102",
       "image": "dooku.jpg"
     },
     "model": "resources.people",
@@ -1269,7 +1269,7 @@
       "mass": "unknown",
       "homeworld_id": 2,
       "species_id": 2,
-      "birth_year": "67BBY",
+      "birth_year": "67",
       "image": "bail_prestor_organa.jpg"
     },
     "model": "resources.people",
@@ -1288,7 +1288,7 @@
       "mass": "79",
       "homeworld_id": 53,
       "species_id": 53,
-      "birth_year": "66BBY",
+      "birth_year": "66",
       "image": "jango_fett.jpg"
     },
     "model": "resources.people",
