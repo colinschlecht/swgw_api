@@ -33,7 +33,7 @@
       "eye_color": "yellow",
       "mass": "75",
       "homeworld_id": 1,
-      "species_id": 1,
+      "species_id": 2,
       "birth_year": "30",
       "image": "c-3po.jpg"
     },
@@ -52,7 +52,7 @@
       "eye_color": "red",
       "mass": "32",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 2,
       "birth_year": "33",
       "image": "r2-d2.jpg"
     },
@@ -90,7 +90,7 @@
       "eye_color": "brown",
       "mass": "49",
       "homeworld_id": 2,
-      "species_id": 2,
+      "species_id": 1,
       "birth_year": "19",
       "image": "leia_organa.jpg"
     },
@@ -185,7 +185,7 @@
       "eye_color": "blue",
       "mass": "77",
       "homeworld_id": 20,
-      "species_id": 20,
+      "species_id": 1,
       "birth_year": "57",
       "image": "obi-wan_kenobi.jpg"
     },
@@ -223,7 +223,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 21,
-      "species_id": 21,
+      "species_id": 1,
       "birth_year": "64",
       "image": "wilhuff_tarkin.jpg"
     },
@@ -242,7 +242,7 @@
       "eye_color": "blue",
       "mass": "112",
       "homeworld_id": 14,
-      "species_id": 14,
+      "species_id": 3,
       "birth_year": "200",
       "image": "chewbacca.jpg"
     },
@@ -261,7 +261,7 @@
       "eye_color": "brown",
       "mass": "80",
       "homeworld_id": 22,
-      "species_id": 22,
+      "species_id": 1,
       "birth_year": "29",
       "image": "han_solo.jpg"
     },
@@ -280,7 +280,7 @@
       "eye_color": "black",
       "mass": "74",
       "homeworld_id": 23,
-      "species_id": 23,
+      "species_id": 4,
       "birth_year": "44",
       "image": "greedo.jpg"
     },
@@ -318,7 +318,7 @@
       "eye_color": "hazel",
       "mass": "77",
       "homeworld_id": 22,
-      "species_id": 22,
+      "species_id": 1,
       "birth_year": "21",
       "image": "wedge_antilles.jpg"
     },
@@ -337,7 +337,7 @@
       "eye_color": "blue",
       "mass": "110",
       "homeworld_id": 26,
-      "species_id": 26,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "jek_tono_porkins.jpg"
     },
@@ -394,7 +394,7 @@
       "eye_color": "brown",
       "mass": "78.2",
       "homeworld_id": 10,
-      "species_id": 10,
+      "species_id": 1,
       "birth_year": "31.5",
       "image": "boba_fett.jpg"
     },
@@ -413,7 +413,7 @@
       "eye_color": "red",
       "mass": "140",
       "homeworld_id": 28,
-      "species_id": 28,
+      "species_id": 2,
       "birth_year": "15",
       "image": "ig-88.jpg"
     },
@@ -432,7 +432,7 @@
       "eye_color": "red",
       "mass": "113",
       "homeworld_id": 29,
-      "species_id": 29,
+      "species_id": 7,
       "birth_year": "53",
       "image": "bossk.jpg"
     },
@@ -451,7 +451,7 @@
       "eye_color": "brown",
       "mass": "79",
       "homeworld_id": 30,
-      "species_id": 30,
+      "species_id": 1,
       "birth_year": "31",
       "image": "lando_calrissian.jpg"
     },
@@ -470,7 +470,7 @@
       "eye_color": "blue",
       "mass": "79",
       "homeworld_id": 6,
-      "species_id": 6,
+      "species_id": 1,
       "birth_year": "37",
       "image": "lobot.jpg"
     },
@@ -489,7 +489,7 @@
       "eye_color": "orange",
       "mass": "83",
       "homeworld_id": 31,
-      "species_id": 31,
+      "species_id": 8,
       "birth_year": "41",
       "image": "ackbar.jpg"
     },
@@ -508,7 +508,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 32,
-      "species_id": 32,
+      "species_id": 1,
       "birth_year": "48",
       "image": "mon_mothma.jpg"
     },
@@ -527,7 +527,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 28,
-      "species_id": 28,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "arvel_crynyd.jpg"
     },
@@ -546,7 +546,7 @@
       "eye_color": "brown",
       "mass": "20",
       "homeworld_id": 7,
-      "species_id": 7,
+      "species_id": 9,
       "birth_year": "8",
       "image": "wicket_systri_warrick.jpg"
     },
@@ -565,7 +565,7 @@
       "eye_color": "black",
       "mass": "68",
       "homeworld_id": 33,
-      "species_id": 33,
+      "species_id": 10,
       "birth_year": "unknown",
       "image": "nien_nunb.jpg"
     },
@@ -584,7 +584,7 @@
       "eye_color": "blue",
       "mass": "89",
       "homeworld_id": 28,
-      "species_id": 28,
+      "species_id": 1,
       "birth_year": "92",
       "image": "qui-gon_jinn.jpg"
     },
@@ -603,7 +603,7 @@
       "eye_color": "red",
       "mass": "90",
       "homeworld_id": 18,
-      "species_id": 18,
+      "species_id": 11,
       "birth_year": "unknown",
       "image": "nute_gunray.jpg"
     },
@@ -622,7 +622,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 9,
-      "species_id": 9,
+      "species_id": 1,
       "birth_year": "91",
       "image": "finis_valorum.jpg"
     },
@@ -641,7 +641,7 @@
       "eye_color": "brown",
       "mass": "45",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "46",
       "image": "padme_amidala.jpg"
     },
@@ -660,7 +660,7 @@
       "eye_color": "orange",
       "mass": "66",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 12,
       "birth_year": "52",
       "image": "jar_jar_binks.jpg"
     },
@@ -679,7 +679,7 @@
       "eye_color": "orange",
       "mass": "82",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 12,
       "birth_year": "unknown",
       "image": "roos_tarpals.jpg"
     },
@@ -698,7 +698,7 @@
       "eye_color": "orange",
       "mass": "unknown",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 12,
       "birth_year": "unknown",
       "image": "rugor_nass.jpg"
     },
@@ -717,7 +717,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "ric_olie.jpg"
     },
@@ -736,7 +736,7 @@
       "eye_color": "yellow",
       "mass": "unknown",
       "homeworld_id": 34,
-      "species_id": 34,
+      "species_id": 13,
       "birth_year": "unknown",
       "image": "watto.jpg"
     },
@@ -755,7 +755,7 @@
       "eye_color": "orange",
       "mass": "40",
       "homeworld_id": 35,
-      "species_id": 35,
+      "species_id": 14,
       "birth_year": "unknown",
       "image": "sebulba.jpg"
     },
@@ -774,7 +774,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "62",
       "image": "quarsh_panaka.jpg"
     },
@@ -812,7 +812,7 @@
       "eye_color": "yellow",
       "mass": "80",
       "homeworld_id": 36,
-      "species_id": 36,
+      "species_id": 22,
       "birth_year": "54",
       "image": "darth_maul.jpg"
     },
@@ -831,7 +831,7 @@
       "eye_color": "pink",
       "mass": "unknown",
       "homeworld_id": 37,
-      "species_id": 37,
+      "species_id": 15,
       "birth_year": "unknown",
       "image": "bib_fortuna.jpg"
     },
@@ -850,7 +850,7 @@
       "eye_color": "hazel",
       "mass": "55",
       "homeworld_id": 37,
-      "species_id": 37,
+      "species_id": 15,
       "birth_year": "48",
       "image": "ayla_secura.jpg"
     },
@@ -869,7 +869,7 @@
       "eye_color": "unknown",
       "mass": "15",
       "homeworld_id": 38,
-      "species_id": 38,
+      "species_id": 16,
       "birth_year": "unknown",
       "image": "ratts_tyerel.jpg"
     },
@@ -888,7 +888,7 @@
       "eye_color": "yellow",
       "mass": "45",
       "homeworld_id": 39,
-      "species_id": 39,
+      "species_id": 17,
       "birth_year": "unknown",
       "image": "dud_bolt.jpg"
     },
@@ -907,7 +907,7 @@
       "eye_color": "black",
       "mass": "unknown",
       "homeworld_id": 40,
-      "species_id": 40,
+      "species_id": 18,
       "birth_year": "unknown",
       "image": "gasgano.jpg"
     },
@@ -926,7 +926,7 @@
       "eye_color": "orange",
       "mass": "65",
       "homeworld_id": 41,
-      "species_id": 41,
+      "species_id": 18,
       "birth_year": "unknown",
       "image": "ben_quadinaros.jpg"
     },
@@ -945,7 +945,7 @@
       "eye_color": "brown",
       "mass": "84",
       "homeworld_id": 42,
-      "species_id": 42,
+      "species_id": 1,
       "birth_year": "72",
       "image": "mace_windu.jpg"
     },
@@ -964,7 +964,7 @@
       "eye_color": "yellow",
       "mass": "82",
       "homeworld_id": 43,
-      "species_id": 43,
+      "species_id": 20,
       "birth_year": "92",
       "image": "ki-adi-mundi.jpg"
     },
@@ -983,7 +983,7 @@
       "eye_color": "black",
       "mass": "87",
       "homeworld_id": 44,
-      "species_id": 44,
+      "species_id": 41,
       "birth_year": "unknown",
       "image": "kit_fisto.jpg"
     },
@@ -1002,7 +1002,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 45,
-      "species_id": 45,
+      "species_id": 22,
       "birth_year": "unknown",
       "image": "eeth_koth.jpg"
     },
@@ -1021,7 +1021,7 @@
       "eye_color": "blue",
       "mass": "50",
       "homeworld_id": 9,
-      "species_id": 9,
+      "species_id": 23,
       "birth_year": "unknown",
       "image": "adi_gallia.jpg"
     },
@@ -1040,7 +1040,7 @@
       "eye_color": "orange",
       "mass": "unknown",
       "homeworld_id": 47,
-      "species_id": 47,
+      "species_id": 24,
       "birth_year": "unknown",
       "image": "saesee_tiin.jpg"
     },
@@ -1059,7 +1059,7 @@
       "eye_color": "yellow",
       "mass": "unknown",
       "homeworld_id": 48,
-      "species_id": 48,
+      "species_id": 25,
       "birth_year": "unknown",
       "image": "yarael_poof.jpg"
     },
@@ -1078,8 +1078,8 @@
       "eye_color": "black",
       "mass": "80",
       "homeworld_id": 49,
-      "species_id": 49,
-      "birth_year": "22",
+      "species_id": 26,
+      "birth_year": "385,238",
       "image": "plo_koon.jpg"
     },
     "model": "resources.people",
@@ -1097,7 +1097,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 50,
-      "species_id": 50,
+      "species_id": 27,
       "birth_year": "unknown",
       "image": "mas_amedda.jpg"
     },
@@ -1116,7 +1116,7 @@
       "eye_color": "brown",
       "mass": "85",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "gregar_typho.jpg"
     },
@@ -1135,7 +1135,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "corde.jpg"
     },
@@ -1173,7 +1173,7 @@
       "eye_color": "yellow",
       "mass": "80",
       "homeworld_id": 11,
-      "species_id": 11,
+      "species_id": 28,
       "birth_year": "unknown",
       "image": "poggle_the_lesser.jpg"
     },
@@ -1192,7 +1192,7 @@
       "eye_color": "blue",
       "mass": "56.2",
       "homeworld_id": 51,
-      "species_id": 51,
+      "species_id": 29,
       "birth_year": "58",
       "image": "luminara_unduli.jpg"
     },
@@ -1211,7 +1211,7 @@
       "eye_color": "blue",
       "mass": "50",
       "homeworld_id": 51,
-      "species_id": 51,
+      "species_id": 29,
       "birth_year": "40",
       "image": "barriss_offee.jpg"
     },
@@ -1230,7 +1230,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 8,
-      "species_id": 8,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "dorme.jpg"
     },
@@ -1249,7 +1249,7 @@
       "eye_color": "brown",
       "mass": "80",
       "homeworld_id": 52,
-      "species_id": 52,
+      "species_id": 1,
       "birth_year": "102",
       "image": "dooku.jpg"
     },
@@ -1268,7 +1268,7 @@
       "eye_color": "brown",
       "mass": "unknown",
       "homeworld_id": 2,
-      "species_id": 2,
+      "species_id": 1,
       "birth_year": "67",
       "image": "bail_prestor_organa.jpg"
     },
@@ -1287,7 +1287,7 @@
       "eye_color": "brown",
       "mass": "79",
       "homeworld_id": 53,
-      "species_id": 53,
+      "species_id": 1,
       "birth_year": "66",
       "image": "jango_fett.jpg"
     },
@@ -1306,7 +1306,7 @@
       "eye_color": "yellow",
       "mass": "55",
       "homeworld_id": 54,
-      "species_id": 54,
+      "species_id": 30,
       "birth_year": "unknown",
       "image": "zam_wesell.jpg"
     },
@@ -1325,7 +1325,7 @@
       "eye_color": "yellow",
       "mass": "102",
       "homeworld_id": 55,
-      "species_id": 55,
+      "species_id": 31,
       "birth_year": "unknown",
       "image": "dexter_jettster.jpg"
     },
@@ -1382,7 +1382,7 @@
       "eye_color": "blue",
       "mass": "unknown",
       "homeworld_id": 9,
-      "species_id": 9,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "jocasta_nu.jpg"
     },
@@ -1401,7 +1401,7 @@
       "eye_color": "red, blue",
       "mass": "unknown",
       "homeworld_id": 28,
-      "species_id": 28,
+      "species_id": 2,
       "birth_year": "unknown",
       "image": "r4-p17.jpg"
     },
@@ -1420,7 +1420,7 @@
       "eye_color": "unknown",
       "mass": "48",
       "homeworld_id": 56,
-      "species_id": 56,
+      "species_id": 33,
       "birth_year": "unknown",
       "image": "wat_tambor.jpg"
     },
@@ -1439,7 +1439,7 @@
       "eye_color": "gold",
       "mass": "unknown",
       "homeworld_id": 57,
-      "species_id": 57,
+      "species_id": 34,
       "birth_year": "unknown",
       "image": "san_hill.jpg"
     },
@@ -1458,7 +1458,7 @@
       "eye_color": "black",
       "mass": "57",
       "homeworld_id": 58,
-      "species_id": 58,
+      "species_id": 35,
       "birth_year": "unknown",
       "image": "shaak_ti.jpg"
     },
@@ -1477,7 +1477,7 @@
       "eye_color": "green, yellow",
       "mass": "159",
       "homeworld_id": 59,
-      "species_id": 59,
+      "species_id": 36,
       "birth_year": "unknown",
       "image": "grievous.jpg"
     },
@@ -1496,7 +1496,7 @@
       "eye_color": "blue",
       "mass": "136",
       "homeworld_id": 14,
-      "species_id": 14,
+      "species_id": 3,
       "birth_year": "unknown",
       "image": "tarfful.jpg"
     },
@@ -1515,7 +1515,7 @@
       "eye_color": "brown",
       "mass": "79",
       "homeworld_id": 2,
-      "species_id": 2,
+      "species_id": 1,
       "birth_year": "unknown",
       "image": "raymus_antilles.jpg"
     },
@@ -1534,7 +1534,7 @@
       "eye_color": "white",
       "mass": "48",
       "homeworld_id": 60,
-      "species_id": 60,
+      "species_id": 38,
       "birth_year": "unknown",
       "image": "sly_moore.jpg"
     },
@@ -1553,7 +1553,7 @@
       "eye_color": "black",
       "mass": "80",
       "homeworld_id": 12,
-      "species_id": 12,
+      "species_id": 37,
       "birth_year": "unknown",
       "image": "tion_medon.jpg"
     },
