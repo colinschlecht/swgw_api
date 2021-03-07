@@ -10,10 +10,10 @@ require 'json'
 
 def seed_character_questions
 
-    Question.all.each do q   
-        Character.all.each do char
+    Question.all.each do |q|   
+        Character.all.each do |c|
         cq = Character_question.new
-        cq.character_id = char.id
+        cq.character_id = c.id
         cq.question_id = q.id
         case q.category_id
         when 1
@@ -65,9 +65,10 @@ def seed_character_questions
             end            
         else
             puts "update seeds to continue"
-            
         end 
+        cq.save
         end
+    end
 
 
 
@@ -200,8 +201,6 @@ end
 # seed_categories
 # seed_home_world
 # seed_species
-
 # seed_characters
-
-
 #  seed_questions
+seed_character_questions
