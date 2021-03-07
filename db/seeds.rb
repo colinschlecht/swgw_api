@@ -8,11 +8,13 @@ require 'json'
 #Be sure to seed home_world and species before characters.
 
 
+
+
 def seed_character_questions
 
     Question.all.each do |q|   
         Character.all.each do |c|
-        cq = Character_question.new
+        cq = CharacterQuestion.new
         cq.character_id = c.id
         cq.question_id = q.id
         case q.category_id
@@ -49,7 +51,7 @@ def seed_character_questions
                 cq.answer = c.mass == q.attribute_desc
             end
         when 8
-            cq.answer = c.home_world == q.attribute_desc
+            cq.answer = c.homeworld == q.attribute_desc
         when 9
             cq.answer = c.species == q.attribute_desc
         when 10
