@@ -1,3 +1,5 @@
 class CharacterQuestionsSerializer < ActiveModel::Serializer
-  attributes :all 
+  attributes :question_id, :character_id, :answer
+  belongs_to :question
+  belongs_to :character
 end

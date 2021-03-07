@@ -1,4 +1,4 @@
 class SpeciesSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :name
   has_many :Characters
 end
