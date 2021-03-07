@@ -1,5 +1,6 @@
 class SpeciesController < ApplicationController
-
-    species = Species.all
-    render json: species
+    def index
+        species = Species.all
+        render json: species
+    end
 end

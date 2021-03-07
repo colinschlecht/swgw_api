@@ -1,6 +1,6 @@
 class HomeworldsController < ApplicationController
     def index
-        homeworlds = Homeworlds.all
+        homeworlds = Homeworld.all
         render json: homeworlds
     end
 end
