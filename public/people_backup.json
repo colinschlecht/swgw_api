@@ -2,7 +2,14 @@
 
 {
 "people": [
+  
   {
+    "fields": {
+      "edited": "2021-05-03",
+      "note": "Note this file is in need of scrubbing hair color and birth year they're all strings Keeping for reference purposes"
+    }
+  },
+  { 
     "fields": {
       "edited": "2014-12-20T21:17:56.891Z",
       "name": "Luke Skywalker",
