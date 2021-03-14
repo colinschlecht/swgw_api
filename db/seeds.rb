@@ -184,8 +184,8 @@ end
 def seed_characters
     response_string = RestClient.get('http://localhost:3000/people')
     characters_parsed = JSON.parse(response_string)
-    new_characters = characters.map{|c| c["fields"]}
-    db_fill_characters = new_characters.map do |char|
+    # new_characters = characters.map{|c| c["fields"]} fields removed from json
+    db_fill_characters = characters_parsed.map do |char|
         Character.create(name: char["name"], 
             image: char["image"], 
             gender: char["gender"], 
@@ -203,6 +203,6 @@ end
 # seed_categories
 # seed_home_world
 # seed_species
-# seed_characters
+seed_characters
 #  seed_questions
 # seed_character_questions

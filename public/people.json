@@ -1,4 +1,4 @@
-[
+{"characters": [
   {
   "id": 2,
   "name": "C-3PO",
@@ -971,4 +971,4 @@
   "birth_year": 15,
   "height": 200
   }
-  ]
+  ]}
