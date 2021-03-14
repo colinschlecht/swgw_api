@@ -2637,71 +2637,6 @@ characters = {"characters": [
             
     
 
-def seed_character_questions
-
-    Question.all.each do |q|   
-        Character.all.each do |c|
-        cq = CharacterQuestion.new
-        cq.character_id = c.id
-        cq.question_id = q.id
-        case q.category_id
-        when 1
-            cq.answer = c.name == q.attribute_desc
-        when 2
-            cq.answer = c.gender == q.attribute_desc 
-        when 3
-            cq.answer = c.skin_tone == q.attribute_desc  
-        when 4
-            if q.attribute_desc != 0
-                case q.attribute_desc
-                when 100
-                    cq.answer = c.height <= q.attribute_desc
-                when 200
-                    cq.answer = c.height >= q.attribute_desc
-                end
-            else
-                cq.answer = c.height == q.attribute_desc
-            end
-        when 5
-            cq.answer = c.eye_color == q.attribute_desc    
-        when 6
-            cq.answer = c.hair_color == q.attribute_desc
-        when 7
-            if q.attribute_desc != 0
-                case q.attribute_desc
-                when 50
-                    cq.answer = c.mass <= q.attribute_desc
-                when 75
-                    cq.answer = c.mass >= q.attribute_desc
-                end
-            else
-                cq.answer = c.mass == q.attribute_desc
-            end
-        when 8
-            cq.answer = c.homeworld == q.attribute_desc
-        when 9
-            cq.answer = c.species == q.attribute_desc
-        when 10
-            if q.attribute_desc != 0
-                case q.attribute_desc
-                when 100
-                    cq.answer = c.birth_year <= q.attribute_desc
-                when 50
-                    cq.answer = c.birth_year <= q.attribute_desc
-                end
-            else
-                cq.answer = c.birth_year == q.attribute_desc
-            end            
-        else
-            puts "update seeds to continue"
-        end 
-        cq.save
-        end
-    end
-
-
-
-end
 
 
 
@@ -2787,23 +2722,21 @@ end
 
 
     new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
-    db_fill_planets = new_home_worlds.each do |planet|
+    new_home_worlds.each do |planet|
         Homeworld.create(name: planet[:name])
     end
 
-db_fill_planets
 
 
     new_species = species[:species].map{|c| c[:fields]}
-    db_fill_species = new_species.each do |spec|
+    new_species.each do |spec|
         Species.create(name: spec[:name])
     end
 
-db_fill_species
 
     
     
-    db_fill_characters = characters[:characters].each do |char|
+    characters[:characters].each do |char|
         Character.create(name: char[:name], 
             image: char[:image], 
             gender: char[:gender], 
@@ -2816,11 +2749,90 @@ db_fill_species
             species_id: char[:species_id],
             birth_year: char[:birth_year])
     end
-db_fill_characters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def seed_character_questions
+
+    Question.all.each do |q|   
+        Character.all.each do |c|
+        cq = CharacterQuestion.new
+        cq.character_id = c.id
+        cq.question_id = q.id
+        case q.category_id
+        when 1
+            cq.answer = c.name == q.attribute_desc
+        when 2
+            cq.answer = c.gender == q.attribute_desc 
+        when 3
+            cq.answer = c.skin_tone == q.attribute_desc  
+        when 4
+            if q.attribute_desc != 0
+                case q.attribute_desc
+                when 100
+                    cq.answer = c.height <= q.attribute_desc
+                when 200
+                    cq.answer = c.height >= q.attribute_desc
+                end
+            else
+                cq.answer = c.height == q.attribute_desc
+            end
+        when 5
+            cq.answer = c.eye_color == q.attribute_desc    
+        when 6
+            cq.answer = c.hair_color == q.attribute_desc
+        when 7
+            if q.attribute_desc != 0
+                case q.attribute_desc
+                when 50
+                    cq.answer = c.mass <= q.attribute_desc
+                when 75
+                    cq.answer = c.mass >= q.attribute_desc
+                end
+            else
+                cq.answer = c.mass == q.attribute_desc
+            end
+        when 8
+            cq.answer = c.homeworld == q.attribute_desc
+        when 9
+            cq.answer = c.species == q.attribute_desc
+        when 10
+            if q.attribute_desc != 0
+                case q.attribute_desc
+                when 100
+                    cq.answer = c.birth_year <= q.attribute_desc
+                when 50
+                    cq.answer = c.birth_year <= q.attribute_desc
+                end
+            else
+                cq.answer = c.birth_year == q.attribute_desc
+            end            
+        else
+            puts "update seeds to continue"
+        end 
+        cq.save
+        end
+    end
+
+
+
+end
 
 # seed_categories
 # seed_home_world(homeworlds)
 # seed_species(species)
 # seed_characters(characters)
-#  seed_questions
-# seed_character_questions
+seed_questions
+seed_character_questions
