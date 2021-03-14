@@ -1,6 +1,5 @@
 require 'rest-client'
 require 'pry'
-require 'json'
 
 #To seed the database, ucomment each method and method call. NOTE -- localhost url below will need to be activated.
 # Each JSON file can be located in public folder. In the terminal, run: json-server --watch db.json
@@ -696,7 +695,7 @@ species = {
 
 }
 
-characters = {"characters": [
+characters = [
     {
     "id": 2,
     "name": "C-3PO",
@@ -707,7 +706,9 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 75,
     "birth_year": 30,
-    "height": 167
+    "height": 167,
+    "homeworld_id": 1,
+    "species_id": 2
     },
     {
     "id": 4,
@@ -719,7 +720,9 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 136,
     "birth_year": 41,
-    "height": 202
+    "height": 202,
+    "homeworld_id": 1,
+    "species_id": 1
     },
     {
     "id": 5,
@@ -731,6 +734,8 @@ characters = {"characters": [
     "hair_color": "brown",
     "mass": 49,
     "birth_year": 19,
+    "homeworld_id": 2,
+      "species_id": 1,
     "height": 150
     },
     {
@@ -741,6 +746,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "blue",
     "hair_color": "brown",
+    "homeworld_id": 1,
+    "species_id": 1,
     "mass": 120,
     "birth_year": 52,
     "height": 178
@@ -753,6 +760,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "blue",
     "hair_color": "brown",
+    "homeworld_id": 1,
+    "species_id": 1,
     "mass": 75,
     "birth_year": 47,
     "height": 165
@@ -766,6 +775,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 84,
+    "homeworld_id": 1,
+    "species_id": 1,
     "birth_year": 24,
     "height": 183
     },
@@ -779,6 +790,8 @@ characters = {"characters": [
     "hair_color": "white",
     "mass": 77,
     "birth_year": 57,
+    "homeworld_id": 20,
+      "species_id": 1,
     "height": 182
     },
     {
@@ -789,6 +802,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "blue",
     "hair_color": "brown",
+    "homeworld_id": 1,
+    "species_id": 1,
     "mass": 84,
     "birth_year": 41,
     "height": 188
@@ -801,6 +816,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "blue",
     "hair_color": "grey",
+    "homeworld_id": 21,
+      "species_id": 1,
     "mass": 0,
     "birth_year": 64,
     "height": 180
@@ -814,6 +831,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 112,
+    "homeworld_id": 14,
+    "species_id": 3,
     "birth_year": 200,
     "height": 228
     },
@@ -827,6 +846,8 @@ characters = {"characters": [
     "hair_color": "brown",
     "mass": 80,
     "birth_year": 29,
+    "homeworld_id": 22,
+    "species_id": 1,
     "height": 180
     },
     {
@@ -839,6 +860,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 74,
     "birth_year": 44,
+    "homeworld_id": 23,
+    "species_id": 4,
     "height": 173
     },
     {
@@ -849,6 +872,9 @@ characters = {"characters": [
     "skin_tone": "green-ish",
     "eye_color": "orange",
     "hair_color": "none",
+    "homeworld_id": 24,
+    "species_id": 24,
+    "birth_year": "600",
     "mass": 1,
     "birth_year": 600,
     "height": 175
@@ -861,6 +887,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "hazel",
     "hair_color": "brown",
+    "homeworld_id": 22,
+    "species_id": 1,
     "mass": 77,
     "birth_year": 21,
     "height": 170
@@ -874,6 +902,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 110,
+    "homeworld_id": 26,
+    "species_id": 1,
     "birth_year": 0,
     "height": 180
     },
@@ -887,6 +917,8 @@ characters = {"characters": [
     "hair_color": "white",
     "mass": 17,
     "birth_year": 896,
+    "homeworld_id": 28,
+    "species_id": 28,
     "height": 66
     },
     {
@@ -899,6 +931,8 @@ characters = {"characters": [
     "hair_color": "grey",
     "mass": 75,
     "birth_year": 82,
+    "homeworld_id": 8,
+    "species_id": 8,
     "height": 170
     },
     {
@@ -910,6 +944,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 78,
+    "homeworld_id": 10,
+    "species_id": 1,
     "birth_year": 31,
     "height": 183
     },
@@ -921,6 +957,8 @@ characters = {"characters": [
     "skin_tone": "green-ish",
     "eye_color": "red",
     "hair_color": "none",
+    "homeworld_id": 29,
+      "species_id": 7,
     "mass": 113,
     "birth_year": 53,
     "height": 190
@@ -934,6 +972,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 79,
+    "homeworld_id": 30,
+    "species_id": 1,
     "birth_year": 31,
     "height": 177
     },
@@ -946,6 +986,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "none",
     "mass": 79,
+    "homeworld_id": 6,
+    "species_id": 1,
     "birth_year": 37,
     "height": 175
     },
@@ -969,6 +1011,8 @@ characters = {"characters": [
     "skin_tone": "fair",
     "eye_color": "brown",
     "hair_color": "brown",
+    "homeworld_id": 28,
+    "species_id": 1,
     "mass": 0,
     "birth_year": 0,
     "height": 0
@@ -982,6 +1026,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "brown",
     "mass": 20,
+    "homeworld_id": 7,
+      "species_id": 9,
     "birth_year": 8,
     "height": 88
     },
@@ -995,6 +1041,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 68,
     "birth_year": 0,
+    "homeworld_id": 33,
+      "species_id": 10,
     "height": 160
     },
     {
@@ -1006,6 +1054,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 89,
+    "homeworld_id": 28,
+      "species_id": 1,
     "birth_year": 92,
     "height": 193
     },
@@ -1018,6 +1068,8 @@ characters = {"characters": [
     "eye_color": "red",
     "hair_color": "none",
     "mass": 90,
+    "homeworld_id": 18,
+    "species_id": 11,
     "birth_year": 0,
     "height": 191
     },
@@ -1030,6 +1082,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "brown",
     "mass": 45,
+    "homeworld_id": 8,
+      "species_id": 1,
     "birth_year": 46,
     "height": 185
     },
@@ -1042,6 +1096,8 @@ characters = {"characters": [
     "eye_color": "orange",
     "hair_color": "none",
     "mass": 66,
+    "homeworld_id": 8,
+    "species_id": 12,
     "birth_year": 52,
     "height": 196
     },
@@ -1054,6 +1110,8 @@ characters = {"characters": [
     "eye_color": "orange",
     "hair_color": "none",
     "mass": 82,
+    "homeworld_id": 8,
+    "species_id": 12,
     "birth_year": 0,
     "height": 224
     },
@@ -1066,6 +1124,8 @@ characters = {"characters": [
     "eye_color": "orange",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 8,
+    "species_id": 12,
     "birth_year": 0,
     "height": 206
     },
@@ -1078,6 +1138,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 0,
+    "homeworld_id": 8,
+    "species_id": 1,
     "birth_year": 0,
     "height": 183
     },
@@ -1091,6 +1153,8 @@ characters = {"characters": [
     "hair_color": "black",
     "mass": 0,
     "birth_year": 0,
+    "homeworld_id": 34,
+    "species_id": 13,
     "height": 137
     },
     {
@@ -1102,6 +1166,8 @@ characters = {"characters": [
     "eye_color": "orange",
     "hair_color": "none",
     "mass": 40,
+    "homeworld_id": 35,
+    "species_id": 14,
     "birth_year": 0,
     "height": 112
     },
@@ -1114,6 +1180,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 0,
+    "homeworld_id": 8,
+    "species_id": 1,
     "birth_year": 62,
     "height": 183
     },
@@ -1126,6 +1194,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 0,
+    "homeworld_id": 1,
+    "species_id": 1,
     "birth_year": 72,
     "height": 163
     },
@@ -1138,6 +1208,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "none",
     "mass": 80,
+    "homeworld_id": 36,
+    "species_id": 22,
     "birth_year": 54,
     "height": 175
     },
@@ -1151,6 +1223,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 0,
     "birth_year": 0,
+    "homeworld_id": 37,
+    "species_id": 15,
     "height": 180
     },
     {
@@ -1163,6 +1237,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 55,
     "birth_year": 48,
+    "homeworld_id": 37,
+    "species_id": 15,
     "height": 178
     },
     {
@@ -1174,6 +1250,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "none",
     "mass": 45,
+    "homeworld_id": 39,
+    "species_id": 17,
     "birth_year": 0,
     "height": 94
     },
@@ -1186,6 +1264,8 @@ characters = {"characters": [
     "eye_color": "black",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 40,
+    "species_id": 18,
     "birth_year": 0,
     "height": 122
     },
@@ -1199,6 +1279,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 65,
     "birth_year": 0,
+    "homeworld_id": 41,
+    "species_id": 18,
     "height": 163
     },
     {
@@ -1210,6 +1292,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "none",
     "mass": 84,
+    "homeworld_id": 42,
+    "species_id": 1,
     "birth_year": 72,
     "height": 188
     },
@@ -1222,6 +1306,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "white",
     "mass": 82,
+    "homeworld_id": 43,
+    "species_id": 20,
     "birth_year": 92,
     "height": 198
     },
@@ -1234,6 +1320,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 0,
+    "homeworld_id": 45,
+    "species_id": 22,
     "birth_year": 0,
     "height": 171
     },
@@ -1246,6 +1334,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "none",
     "mass": 50,
+    "homeworld_id": 9,
+    "species_id": 23,
     "birth_year": 0,
     "height": 184
     },
@@ -1258,6 +1348,8 @@ characters = {"characters": [
     "eye_color": "orange",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 47,
+    "species_id": 24,
     "birth_year": 0,
     "height": 188
     },
@@ -1270,6 +1362,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 0,
+    "homeworld_id": 32,
+    "species_id": 1,
     "birth_year": 48,
     "height": 150
     },
@@ -1282,6 +1376,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "blond",
     "mass": 77,
+    "homeworld_id": 1,
+      "species_id": 1,
     "birth_year": 19,
     "height": 172
     },
@@ -1294,6 +1390,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "blond",
     "mass": 0,
+    "homeworld_id": 9,
+    "species_id": 1,
     "birth_year": 91,
     "height": 170
     },
@@ -1306,6 +1404,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 48,
+    "species_id": 25,
     "birth_year": 0,
     "height": 264
     },
@@ -1318,6 +1418,8 @@ characters = {"characters": [
     "eye_color": "black",
     "hair_color": "none",
     "mass": 80,
+    "homeworld_id": 49,
+    "species_id": 26,
     "birth_year": 385,
     "height": 188
     },
@@ -1330,6 +1432,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 50,
+    "species_id": 27,
     "birth_year": 0,
     "height": 196
     },
@@ -1342,6 +1446,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 85,
+    "homeworld_id": 8,
+    "species_id": 1,
     "birth_year": 0,
     "height": 185
     },
@@ -1355,6 +1461,8 @@ characters = {"characters": [
     "hair_color": "brown",
     "mass": 0,
     "birth_year": 0,
+    "homeworld_id": 8,
+    "species_id": 1,
     "height": 157
     },
     {
@@ -1366,6 +1474,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 0,
+    "homeworld_id": 1,
+      "species_id": 1,
     "birth_year": 82,
     "height": 183
     },
@@ -1378,6 +1488,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "none",
     "mass": 80,
+    "homeworld_id": 11,
+    "species_id": 28,
     "birth_year": 0,
     "height": 183
     },
@@ -1390,6 +1502,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "black",
     "mass": 56,
+    "homeworld_id": 51,
+    "species_id": 29,
     "birth_year": 58,
     "height": 170
     },
@@ -1402,6 +1516,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "black",
     "mass": 50,
+    "homeworld_id": 51,
+      "species_id": 29,
     "birth_year": 40,
     "height": 166
     },
@@ -1414,6 +1530,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "brown",
     "mass": 0,
+    "homeworld_id": 8,
+    "species_id": 1,
     "birth_year": 0,
     "height": 165
     },
@@ -1426,6 +1544,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "white",
     "mass": 80,
+    "homeworld_id": 52,
+    "species_id": 1,
     "birth_year": 102,
     "height": 193
     },
@@ -1438,6 +1558,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 0,
+    "homeworld_id": 2,
+    "species_id": 1,
     "birth_year": 67,
     "height": 191
     },
@@ -1450,6 +1572,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "black",
     "mass": 79,
+    "homeworld_id": 53,
+      "species_id": 1,
     "birth_year": 66,
     "height": 183
     },
@@ -1462,6 +1586,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "blond",
     "mass": 55,
+    "homeworld_id": 54,
+    "species_id": 30,
     "birth_year": 0,
     "height": 168
     },
@@ -1474,6 +1600,8 @@ characters = {"characters": [
     "eye_color": "yellow",
     "hair_color": "none",
     "mass": 102,
+    "homeworld_id": 55,
+      "species_id": 31,
     "birth_year": 0,
     "height": 198
     },
@@ -1485,6 +1613,8 @@ characters = {"characters": [
     "skin_tone": "grey-ish",
     "eye_color": "black",
     "hair_color": "none",
+    "homeworld_id": 10,
+      "species_id": 10,
     "mass": 88,
     "birth_year": 0,
     "height": 229
@@ -1498,6 +1628,8 @@ characters = {"characters": [
     "eye_color": "black",
     "hair_color": "none",
     "mass": 0,
+    "homeworld_id": 10,
+    "species_id": 10,
     "birth_year": 0,
     "height": 213
     },
@@ -1510,6 +1642,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "white",
     "mass": 0,
+    "homeworld_id": 9,
+      "species_id": 1,
     "birth_year": 0,
     "height": 167
     },
@@ -1521,6 +1655,8 @@ characters = {"characters": [
     "skin_tone": "grey-ish",
     "eye_color": "gold",
     "hair_color": "none",
+    "homeworld_id": 57,
+      "species_id": 34,
     "mass": 0,
     "birth_year": 0,
     "height": 191
@@ -1534,6 +1670,8 @@ characters = {"characters": [
     "eye_color": "black",
     "hair_color": "none",
     "mass": 57,
+    "homeworld_id": 58,
+      "species_id": 35,
     "birth_year": 0,
     "height": 178
     },
@@ -1546,6 +1684,8 @@ characters = {"characters": [
     "eye_color": "blue",
     "hair_color": "brown",
     "mass": 136,
+    "homeworld_id": 14,
+    "species_id": 3,
     "birth_year": 0,
     "height": 234
     },
@@ -1558,6 +1698,8 @@ characters = {"characters": [
     "eye_color": "brown",
     "hair_color": "brown",
     "mass": 79,
+    "homeworld_id": 2,
+      "species_id": 1,
     "birth_year": 0,
     "height": 188
     },
@@ -1569,6 +1711,8 @@ characters = {"characters": [
     "skin_tone": "pale-white",
     "eye_color": "white",
     "hair_color": "none",
+    "homeworld_id": 60,
+      "species_id": 38,
     "mass": 48,
     "birth_year": 0,
     "height": 178
@@ -1582,6 +1726,8 @@ characters = {"characters": [
     "eye_color": "black",
     "hair_color": "none",
     "mass": 80,
+    "homeworld_id": 12,
+    "species_id": 37,
     "birth_year": 0,
     "height": 206
     },
@@ -1593,6 +1739,8 @@ characters = {"characters": [
     "skin_tone": "pale-white",
     "eye_color": "green",
     "hair_color": "none",
+    "homeworld_id": 59,
+    "species_id": 36,
     "mass": 159,
     "birth_year": 0,
     "height": 216
@@ -1607,6 +1755,8 @@ characters = {"characters": [
     "hair_color": "none",
     "mass": 0,
     "birth_year": 0,
+    "homeworld_id": 28,
+    "species_id": 2,
     "height": 96
     },
     {
@@ -1618,6 +1768,8 @@ characters = {"characters": [
     "eye_color": "unknown",
     "hair_color": "none",
     "mass": 48,
+    "homeworld_id": 56,
+    "species_id": 33,
     "birth_year": 0,
     "height": 193
     },
@@ -1630,6 +1782,8 @@ characters = {"characters": [
     "eye_color": "unknown",
     "hair_color": "none",
     "mass": 15,
+    "homeworld_id": 38,
+      "species_id": 16,
     "birth_year": 0,
     "height": 79
     },
@@ -1642,6 +1796,8 @@ characters = {"characters": [
     "eye_color": "unknown",
     "hair_color": "none",
     "mass": 32,
+    "homeworld_id": 1,
+      "species_id": 1,
     "birth_year": 0,
     "height": 97
     },
@@ -1654,6 +1810,8 @@ characters = {"characters": [
     "eye_color": "unknown",
     "hair_color": "none",
     "mass": 32,
+    "homeworld_id": 8,
+      "species_id": 2,
     "birth_year": 33,
     "height": 96
     },
@@ -1666,10 +1824,12 @@ characters = {"characters": [
     "eye_color": "unknown",
     "hair_color": "none",
     "mass": 140,
+    "homeworld_id": 1,
+    "species_id": 1,
     "birth_year": 15,
     "height": 200
     }
-    ]}
+    ]
 
     homeworlds = {"planets": [
         {
@@ -2640,114 +2800,115 @@ characters = {"characters": [
 
 
 
-def seed_questions
+# def seed_questions
     
     
-    names = ["C-3PO", "Darth Vader", "Leia Organa", "Owen Lars", "Beru Whitesun lars", "Biggs Darklighter", "Obi-Wan Kenobi", "Anakin Skywalker", "Wilhuff Tarkin", "Chewbacca", "Han Solo", "Greedo", "Jabba Desilijic Tiure", "Wedge Antilles", "Jek Tono Porkins", "Yoda", "Palpatine", "Boba Fett", "Bossk", "Lando Calrissian", "Lobot", "Ackbar", "Arvel Crynyd", "Wicket Systri Warrick", "Nien Nunb", "Qui-Gon Jinn", "Nute Gunray", "Padmé Amidala", "Jar Jar Binks", "Roos Tarpals", "Rugor Nass", "Ric Olié", "Watto", "Sebulba", "Quarsh Panaka", "Shmi Skywalker", "Darth Maul", "Bib Fortuna", "Ayla Secura", "Dud Bolt", "Gasgano", "Ben Quadinaros", "Mace Windu", "Ki-Adi-Mundi", "Eeth Koth", "Adi Gallia", "Saesee Tiin", "Mon Mothma", "Luke Skywalker", "Finis Valorum", "Yarael Poof", "Plo Koon", "Mas Amedda", "Gregar Typho", "Cordé", "Cliegg Lars", "Poggle the Lesser", "Luminara Unduli", "Barriss Offee", "Dormé", "Dooku", "Bail Prestor Organa", "Jango Fett", "Zam Wesell", "Dexter Jettster", "Lama Su", "Taun We", "Jocasta Nu", "San Hill", "Shaak Ti", "Tarfful", "Raymus Antilles", "Sly Moore", "Tion Medon", "Grievous", "R4-P17", "Wat Tambor", "Ratts Tyerel", "R5-D4", "R2-D2", "IG-88"]
-    genders = ["non-binary", "male", "female"]
-    skin_tone = ["gold", "pale-white", "fair", "brown-ish", "green-ish", "tan", "dark", "grey-ish", "orange-ish", "red-ish", "blue", "yellow-ish"] 
-    eye_colors = ["yellow",  "brown",  "blue", "black", "orange", "hazel",  "red", "pink", "gold", "white",  "green",  "unknown"] 
-    hair_colors = [ "none", "brown", "black", "white",  "grey", "blond"]
-    home_worlds = ["Tatooine", "Alderaan", "Stewjon", "Eriadu", "Kashyyyk", "Corellia", "Rodia", "Nal Hutta", "Bestine IV", "unknown", "Naboo", "Kamino", "Trandosha", "Socorro", "Bespin", "Mon Cala", "Endor", "Sullust", "Cato Neimoidia", "Toydaria", "Malastare", "Dathomir", "Ryloth", "Vulpter", "Troiken", "Tund", "Haruun Kal", "Cerea", "Iridonia", "Coruscant", "Iktotch", "Chandrila", "Quermia", "Dorin", "Champala", "Geonosis", "Mirial", "Serenno", "Concord Dawn", "Zolan", "Ojom", "Muunilinst", "Shili", "Umbara", "Utapau", "Kalee", "Skako", "Aleen Minor"] 
-    species2 = ["Droid", "Human", "Wookie", "Rodian", "Iktotchi", "Geonosian", "Mon Calamari", "Trandoshan", "Ewok", "Sullustan", "Neimodian", "Gungan", "Toydarian", "Dug", "Zabrak", "Twi'lek", "Vulptereen", "Xexto", "Cerean", "Tholothian", "Quermian", "Kel Dor", "Chagrian", "Mirialan", "Clawdite", "Besalisk", "Muun", "Togruta", "umbaran", "Pau'an", "Kaleesh", "Skakoan", "Aleena"]
-    mass = [75, 136, 49, 120, 84, 77, 0, 112, 80, 74, 1, 110, 17, 78, 113, 79, 83, 20, 68, 89, 90, 45, 66, 82, 40, 55, 65, 50, 85, 56, 102, 88, 57, 48, 159, 15, 32, 140] 
-    ages = [30, 41, 19, 52, 47, 24, 57, 64, 200, 29, 44, 600, 21, 0, 896, 82, 31, 53, 37, 8, 92, 46, 62, 72, 54, 48, 91, 385, 58, 40, 102, 67, 66, 33, 15]  
-    heights = [167, 202, 150, 178, 165, 183, 182, 188, 180, 228, 173, 175, 170, 66, 190, 177, 0, 88, 160, 193, 191, 185, 196, 224, 206, 137, 112, 163, 94, 122, 198, 171, 184, 172, 264, 157, 166, 168, 229, 213, 234, 216, 96, 79, 97, 200] 
+#     names = ["C-3PO", "Darth Vader", "Leia Organa", "Owen Lars", "Beru Whitesun lars", "Biggs Darklighter", "Obi-Wan Kenobi", "Anakin Skywalker", "Wilhuff Tarkin", "Chewbacca", "Han Solo", "Greedo", "Jabba Desilijic Tiure", "Wedge Antilles", "Jek Tono Porkins", "Yoda", "Palpatine", "Boba Fett", "Bossk", "Lando Calrissian", "Lobot", "Ackbar", "Arvel Crynyd", "Wicket Systri Warrick", "Nien Nunb", "Qui-Gon Jinn", "Nute Gunray", "Padmé Amidala", "Jar Jar Binks", "Roos Tarpals", "Rugor Nass", "Ric Olié", "Watto", "Sebulba", "Quarsh Panaka", "Shmi Skywalker", "Darth Maul", "Bib Fortuna", "Ayla Secura", "Dud Bolt", "Gasgano", "Ben Quadinaros", "Mace Windu", "Ki-Adi-Mundi", "Eeth Koth", "Adi Gallia", "Saesee Tiin", "Mon Mothma", "Luke Skywalker", "Finis Valorum", "Yarael Poof", "Plo Koon", "Mas Amedda", "Gregar Typho", "Cordé", "Cliegg Lars", "Poggle the Lesser", "Luminara Unduli", "Barriss Offee", "Dormé", "Dooku", "Bail Prestor Organa", "Jango Fett", "Zam Wesell", "Dexter Jettster", "Lama Su", "Taun We", "Jocasta Nu", "San Hill", "Shaak Ti", "Tarfful", "Raymus Antilles", "Sly Moore", "Tion Medon", "Grievous", "R4-P17", "Wat Tambor", "Ratts Tyerel", "R5-D4", "R2-D2", "IG-88"]
+#     genders = ["non-binary", "male", "female"]
+#     skin_tone = ["gold", "pale-white", "fair", "brown-ish", "green-ish", "tan", "dark", "grey-ish", "orange-ish", "red-ish", "blue", "yellow-ish"] 
+#     eye_colors = ["yellow",  "brown",  "blue", "black", "orange", "hazel",  "red", "pink", "gold", "white",  "green",  "unknown"] 
+#     hair_colors = [ "none", "brown", "black", "white",  "grey", "blond"]
+#     home_worlds = ["Tatooine", "Alderaan", "Stewjon", "Eriadu", "Kashyyyk", "Corellia", "Rodia", "Nal Hutta", "Bestine IV", "unknown", "Naboo", "Kamino", "Trandosha", "Socorro", "Bespin", "Mon Cala", "Endor", "Sullust", "Cato Neimoidia", "Toydaria", "Malastare", "Dathomir", "Ryloth", "Vulpter", "Troiken", "Tund", "Haruun Kal", "Cerea", "Iridonia", "Coruscant", "Iktotch", "Chandrila", "Quermia", "Dorin", "Champala", "Geonosis", "Mirial", "Serenno", "Concord Dawn", "Zolan", "Ojom", "Muunilinst", "Shili", "Umbara", "Utapau", "Kalee", "Skako", "Aleen Minor"] 
+#     species2 = ["Droid", "Human", "Wookie", "Rodian", "Iktotchi", "Geonosian", "Mon Calamari", "Trandoshan", "Ewok", "Sullustan", "Neimodian", "Gungan", "Toydarian", "Dug", "Zabrak", "Twi'lek", "Vulptereen", "Xexto", "Cerean", "Tholothian", "Quermian", "Kel Dor", "Chagrian", "Mirialan", "Clawdite", "Besalisk", "Muun", "Togruta", "umbaran", "Pau'an", "Kaleesh", "Skakoan", "Aleena"]
+#     mass = [75, 136, 49, 120, 84, 77, 0, 112, 80, 74, 1, 110, 17, 78, 113, 79, 83, 20, 68, 89, 90, 45, 66, 82, 40, 55, 65, 50, 85, 56, 102, 88, 57, 48, 159, 15, 32, 140] 
+#     ages = [30, 41, 19, 52, 47, 24, 57, 64, 200, 29, 44, 600, 21, 0, 896, 82, 31, 53, 37, 8, 92, 46, 62, 72, 54, 48, 91, 385, 58, 40, 102, 67, 66, 33, 15]  
+#     heights = [167, 202, 150, 178, 165, 183, 182, 188, 180, 228, 173, 175, 170, 66, 190, 177, 0, 88, 160, 193, 191, 185, 196, 224, 206, 137, 112, 163, 94, 122, 198, 171, 184, 172, 264, 157, 166, 168, 229, 213, 234, 216, 96, 79, 97, 200] 
 
 
 
-    names.each do |name|
-        Question.create(question: "Is this mystery character #{name}?", category_id: 1, attribute_desc: name)
-    end
-    genders.each do |gender|
-        Question.create(question: "Is this mystery character likely to identify as #{gender}?", category_id:2, attribute_desc: gender)
-    end
-    skin_tone.each do |tone|
-        Question.create(question: "Does this character have an exterior color (excluding armor) or skin-tone that is #{tone}?", category_id: 3, attribute_desc: tone)
-    end
-    eye_colors.each do |color|
-        if color == "unknown"
-            Question.create(question: "Does this character have a known eye color?", category_id: 5, attribute_desc: color)
-        else 
-            Question.create(question: "Does this character have #{color} eyes?", category_id: 5, attribute_desc: color)
-        end
-    end
-    hair_colors.each do |color|
-        if color == "none"
-            Question.create(question: "Does this character have hair?", category_id: 6, attribute_desc: color)
-        else
-            Question.create(question: "Does this character have #{color} hair?", category_id: 6, attribute_desc: color)
-        end
-    end
-    home_worlds.each do |world|
-        if world == "unknown"
-            Question.create(question: "Does this character have a known home world?", category_id: 8, attribute_desc: world)
-        else
-            Question.create(question: "Is this character's homeworld #{world}", category_id: 8, attribute_desc: world)
-        end
-    end
-    species2.each do |spec|
-        if spec == "unknown"
-            Question.create(question: "Does this character have a known species?", category_id: 9, attribute_desc: spec)
-        else
-            Question.create(question: "Is this character a #{spec}?", category_id: 9, attribute_desc: spec)
-        end
-    end
+#     names.each do |name|
+#         Question.create(question: "Is this mystery character #{name}?", category_id: 1, attribute_desc: name)
+#     end
+#     genders.each do |gender|
+#         Question.create(question: "Is this mystery character likely to identify as #{gender}?", category_id:2, attribute_desc: gender)
+#     end
+#     skin_tone.each do |tone|
+#         Question.create(question: "Does this character have an exterior color (excluding armor) or skin-tone that is #{tone}?", category_id: 3, attribute_desc: tone)
+#     end
+#     eye_colors.each do |color|
+#         if color == "unknown"
+#             Question.create(question: "Does this character have a known eye color?", category_id: 5, attribute_desc: color)
+#         else 
+#             Question.create(question: "Does this character have #{color} eyes?", category_id: 5, attribute_desc: color)
+#         end
+#     end
+#     hair_colors.each do |color|
+#         if color == "none"
+#             Question.create(question: "Does this character have hair?", category_id: 6, attribute_desc: color)
+#         else
+#             Question.create(question: "Does this character have #{color} hair?", category_id: 6, attribute_desc: color)
+#         end
+#     end
+#     home_worlds.each do |world|
+#         if world == "unknown"
+#             Question.create(question: "Does this character have a known home world?", category_id: 8, attribute_desc: world)
+#         else
+#             Question.create(question: "Is this character's homeworld #{world}", category_id: 8, attribute_desc: world)
+#         end
+#     end
+#     species2.each do |spec|
+#         if spec == "unknown"
+#             Question.create(question: "Does this character have a known species?", category_id: 9, attribute_desc: spec)
+#         else
+#             Question.create(question: "Is this character a #{spec}?", category_id: 9, attribute_desc: spec)
+#         end
+#     end
 
-        Question.create(question: "Does this character have a known Mass?", category_id: 7, attribute_desc: 0)
-        Question.create(question: "Does this character have a mass below 50?", category_id: 7, attribute_desc: 50)
-        Question.create(question: "does this character have a mass above 75?", category_id: 7, attribute_desc: 75)
+#         Question.create(question: "Does this character have a known Mass?", category_id: 7, attribute_desc: 0)
+#         Question.create(question: "Does this character have a mass below 50?", category_id: 7, attribute_desc: 50)
+#         Question.create(question: "does this character have a mass above 75?", category_id: 7, attribute_desc: 75)
 
-        Question.create(question: "Does this character have a known birth year?", category_id: 10, attribute_desc: 0)
-        Question.create(question: "Was this character born within 50 years of the Battle of Yavin? (BBY)", category_id: 10, attribute_desc: 50)
-        Question.create(question: "Was this character born within 100 years of the Battle of Yavin? (BBY)", category_id: 10, attribute_desc: 100)
+#         Question.create(question: "Does this character have a known birth year?", category_id: 10, attribute_desc: 0)
+#         Question.create(question: "Was this character born within 50 years of the Battle of Yavin? (BBY)", category_id: 10, attribute_desc: 50)
+#         Question.create(question: "Was this character born within 100 years of the Battle of Yavin? (BBY)", category_id: 10, attribute_desc: 100)
     
-        Question.create(question: "Does this character have known height?", category_id: 4, attribute_desc: 0)
-        Question.create(question: "Is this character under 100cm?", category_id: 4, attribute_desc: 100)
-        Question.create(question: "Is this character over 200 cm?", category_id: 4, attribute_desc: 200)
+#         Question.create(question: "Does this character have known height?", category_id: 4, attribute_desc: 0)
+#         Question.create(question: "Is this character under 100cm?", category_id: 4, attribute_desc: 100)
+#         Question.create(question: "Is this character over 200 cm?", category_id: 4, attribute_desc: 200)
     
-end
+# end
 
-    Category.create(name: "Name")
-    Category.create(name: "Gender")
-    Category.create(name: "Skin tone")
-    Category.create(name: "Height")
-    Category.create(name: "Eye color")
-    Category.create(name: "Hair color")
-    Category.create(name: "Mass")
-    Category.create(name: "Home world")
-    Category.create(name: "Species")
-    Category.create(name: "Birth year")
-
-
-
-    new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
-    new_home_worlds.each do |planet|
-        Homeworld.create(name: planet[:name])
-    end
+#     Category.create(name: "Name")
+#     Category.create(name: "Gender")
+#     Category.create(name: "Skin tone")
+#     Category.create(name: "Height")
+#     Category.create(name: "Eye color")
+#     Category.create(name: "Hair color")
+#     Category.create(name: "Mass")
+#     Category.create(name: "Home world")
+#     Category.create(name: "Species")
+#     Category.create(name: "Birth year")
 
 
 
-    new_species = species[:species].map{|c| c[:fields]}
-    new_species.each do |spec|
-        Species.create(name: spec[:name])
-    end
+#     new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
+#     new_home_worlds.each do |planet|
+#         Homeworld.create(name: planet[:name])
+#     end
 
 
-    
-    
-    characters[:characters].each do |char|
-        Character.create(name: char[:name], 
-            image: char[:image], 
-            gender: char[:gender], 
-            skin_tone: char[:skin_tone], 
-            height: char[:height], 
-            eye_color: char[:eye_color], 
-            hair_color: char[:hair_color], 
-            mass: char[:mass],
-            homeworld_id: char[:homeworld_id],
-            species_id: char[:species_id],
-            birth_year: char[:birth_year])
+
+#     new_species = species[:species].map{|c| c[:fields]}
+#     new_species.each do |spec|
+#         Species.create(name: spec[:name])
+#     end
+
+
+characters.each do |char|
+    # binding.pry
+        Character.create(
+        name: char[:name],
+        bio: ".",
+        image: char[:image], 
+        gender: char[:gender], 
+        skin_tone: char[:skin_tone], 
+        height: char[:height], 
+        eye_color: char[:eye_color], 
+        hair_color: char[:hair_color], 
+        mass: char[:mass],
+        homeworld_id: char[:homeworld_id],
+        species_id: char[:species_id],
+        birth_year: char[:birth_year])
     end
 
 
@@ -2834,5 +2995,5 @@ end
 # seed_home_world(homeworlds)
 # seed_species(species)
 # seed_characters(characters)
-seed_questions
-seed_character_questions
+# seed_questions
+# seed_character_questions
