@@ -2830,7 +2830,7 @@ def seed_character_questions
 
 end
 
-seed_categories
+# seed_categories
 # seed_home_world(homeworlds)
 # seed_species(species)
 # seed_characters(characters)
