@@ -185,7 +185,7 @@ def seed_characters
     response_string  = File.read('./public/people.json')
     # response_string = RestClient.get('http://localhost:3000/characters')
     characters_parsed = JSON.parse(response_string)
-    db_fill_characters = characters_parsed.map do |char|
+    db_fill_characters = characters_parsed["characters"].map do |char|
         Character.create(name: char["name"], 
             image: char["image"], 
             gender: char["gender"], 
