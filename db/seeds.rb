@@ -164,7 +164,7 @@ def seed_home_world
     response_string = File.read('./public/planets.json')
 
     home_worlds_parsed = JSON.parse(response_string)
-    new_home_worlds = home_worlds_parsed.map{|c| c["fields"]}
+    new_home_worlds = home_worlds_parsed["planets"].map{|c| c["fields"]}
     db_fill_planets = new_home_worlds.map do |planet|
         Homeworld.create(name: planet["name"])
     end
@@ -175,7 +175,7 @@ def seed_species
     response_string = File.read('./public/species.json')
 
     species_parsed = JSON.parse(response_string)
-    new_species = species_parsed.map{|c| c["fields"]}
+    new_species = species_parsed["species"].map{|c| c["fields"]}
     db_fill_species = new_species.map do |spec|
         Species.create(name: spec["name"])
     end
