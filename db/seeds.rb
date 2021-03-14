@@ -161,7 +161,7 @@ end
 
 
 def seed_home_world
-    response_string = File.read('/public/planets.json')
+    response_string = File.read('./public/planets.json')
 
     home_worlds_parsed = JSON.parse(response_string)
     new_home_worlds = home_worlds_parsed.map{|c| c["fields"]}
@@ -172,7 +172,7 @@ end
 
 
 def seed_species
-    response_string = File.read('/public/species.json')
+    response_string = File.read('./public/species.json')
 
     species_parsed = JSON.parse(response_string)
     new_species = species_parsed.map{|c| c["fields"]}
