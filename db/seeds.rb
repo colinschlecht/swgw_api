@@ -182,9 +182,9 @@ end
 
     
 def seed_characters
-    response_string = RestClient.get('http://localhost:3000/characters')
+    response_string  = File.read('./public/people.json')
+    # response_string = RestClient.get('http://localhost:3000/characters')
     characters_parsed = JSON.parse(response_string)
-    # new_characters = characters.map{|c| c["fields"]} fields removed from json
     db_fill_characters = characters_parsed.map do |char|
         Character.create(name: char["name"], 
             image: char["image"], 
