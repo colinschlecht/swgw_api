@@ -2773,7 +2773,6 @@ def seed_questions
     
 end
 
-def seed_categories
     Category.create(name: "Name")
     Category.create(name: "Gender")
     Category.create(name: "Skin tone")
@@ -2784,29 +2783,25 @@ def seed_categories
     Category.create(name: "Home world")
     Category.create(name: "Species")
     Category.create(name: "Birth year")
-end
 
 
-def seed_home_world(homeworlds)
 
     new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
     db_fill_planets = new_home_worlds.each do |planet|
         Homeworld.create(name: planet[:name])
     end
-end
 
+db_fill_planets
 
-def seed_species(species)
 
     new_species = species[:species].map{|c| c[:fields]}
     db_fill_species = new_species.each do |spec|
         Species.create(name: spec[:name])
     end
-end
 
+db_fill_species
 
     
-def seed_characters(characters)
     
     db_fill_characters = characters[:characters].each do |char|
         Character.create(name: char[:name], 
@@ -2821,11 +2816,11 @@ def seed_characters(characters)
             species_id: char[:species_id],
             birth_year: char[:birth_year])
     end
-end
+db_fill_characters
 
 # seed_categories
-seed_home_world(homeworlds)
-seed_species(species)
-seed_characters(characters)
+# seed_home_world(homeworlds)
+# seed_species(species)
+# seed_characters(characters)
 #  seed_questions
 # seed_character_questions
