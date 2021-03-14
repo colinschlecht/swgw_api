@@ -1,4 +1,4 @@
 class HomeworldSerializer < ActiveModel::Serializer
   attributes :name
-  has_many :Characters
+  has_many :characters
 end
