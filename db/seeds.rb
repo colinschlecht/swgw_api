@@ -161,7 +161,8 @@ end
 
 
 def seed_home_world
-    response_string = RestClient.get('http://localhost:3000/planets')
+    response_string = File.read('/public/planets.json')
+
     home_worlds_parsed = JSON.parse(response_string)
     new_home_worlds = home_worlds_parsed.map{|c| c["fields"]}
     db_fill_planets = new_home_worlds.map do |planet|
@@ -171,7 +172,8 @@ end
 
 
 def seed_species
-    response_string = RestClient.get('http://localhost:3000/species')
+    response_string = File.read('/public/species.json')
+
     species_parsed = JSON.parse(response_string)
     new_species = species_parsed.map{|c| c["fields"]}
     db_fill_species = new_species.map do |spec|
@@ -182,7 +184,7 @@ end
 
     
 def seed_characters
-    response_string  = File.read('./public/people.json')
+    response_string = File.read('./public/people.json')
     # response_string = RestClient.get('http://localhost:3000/characters')
     characters_parsed = JSON.parse(response_string)
     db_fill_characters = characters_parsed["characters"].map do |char|
@@ -200,9 +202,9 @@ def seed_characters
     end
 end
 
-seed_categories
-# seed_home_world
-# seed_species
+# seed_categories
+seed_home_world
+seed_species
 seed_characters
 #  seed_questions
 # seed_character_questions
