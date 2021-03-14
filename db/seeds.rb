@@ -2788,7 +2788,6 @@ end
 
 
 def seed_home_world(homeworlds)
-    binding.pry
 
     new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
     db_fill_planets = new_home_worlds.map do |planet|
