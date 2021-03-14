@@ -42,7 +42,7 @@ species = {
       "skin_colors": "n/a",
       "language": "n/a",
       "hair_colors": "n/a",
-      "homeworld": null,
+      "homeworld": 28,
       "average_lifespan": "indefinite",
       "average_height": "n/a",
       "pk": 2
