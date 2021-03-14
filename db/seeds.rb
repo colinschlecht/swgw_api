@@ -2788,19 +2788,20 @@ end
 
 
 def seed_home_world(homeworlds)
+    binding.pry
 
-    new_home_worlds = homeworlds["planets"].map{|c| c["fields"]}
+    new_home_worlds = homeworlds[:planets].map{|c| c[:fields]}
     db_fill_planets = new_home_worlds.map do |planet|
-        Homeworld.create(name: planet["name"])
+        Homeworld.new(name: planet[:name])
     end
 end
 
 
 def seed_species(species)
 
-    new_species = species["species"].map{|c| c["fields"]}
+    new_species = species[:species].map{|c| c[:fields]}
     db_fill_species = new_species.map do |spec|
-        Species.create(name: spec["name"])
+        Species.new(name: spec[:name])
     end
 end
 
@@ -2808,18 +2809,18 @@ end
     
 def seed_characters(characters)
     
-    db_fill_characters = characters["characters"].map do |char|
-        Character.create(name: char["name"], 
-            image: char["image"], 
-            gender: char["gender"], 
-            skin_tone: char["skin_tone"], 
-            height: char["height"], 
-            eye_color: char["eye_color"], 
-            hair_color: char["hair_color"], 
-            mass: char["mass"],
-            homeworld_id: char["homeworld_id"],
-            species_id: char["species_id"],
-            birth_year: char["birth_year"])
+    db_fill_characters = characters[:characters].map do |char|
+        Character.new(name: char[:name], 
+            image: char[:image], 
+            gender: char[:gender], 
+            skin_tone: char[:skin_tone], 
+            height: char[:height], 
+            eye_color: char[:eye_color], 
+            hair_color: char[:hair_color], 
+            mass: char[:mass],
+            homeworld_id: char[:homeworld_id],
+            species_id: char[:species_id],
+            birth_year: char[:birth_year])
     end
 end
 
