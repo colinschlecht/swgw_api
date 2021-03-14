@@ -2787,7 +2787,7 @@ def seed_categories
 end
 
 
-def seed_home_world
+def seed_home_world(homeworlds)
 
     new_home_worlds = homeworlds["planets"].map{|c| c["fields"]}
     db_fill_planets = new_home_worlds.map do |planet|
@@ -2796,7 +2796,7 @@ def seed_home_world
 end
 
 
-def seed_species
+def seed_species(species)
 
     new_species = species["species"].map{|c| c["fields"]}
     db_fill_species = new_species.map do |spec|
@@ -2806,7 +2806,7 @@ end
 
 
     
-def seed_characters
+def seed_characters(characters)
     
     db_fill_characters = characters["characters"].map do |char|
         Character.create(name: char["name"], 
@@ -2824,8 +2824,8 @@ def seed_characters
 end
 
 # seed_categories
-seed_home_world
-seed_species
-seed_characters
+seed_home_world(home_worlds)
+seed_species(species)
+seed_characters(characters)
 #  seed_questions
 # seed_character_questions
