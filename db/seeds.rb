@@ -2824,7 +2824,7 @@ def seed_characters(characters)
 end
 
 # seed_categories
-seed_home_world(home_worlds)
+seed_home_world(homeworlds)
 seed_species(species)
 seed_characters(characters)
 #  seed_questions
