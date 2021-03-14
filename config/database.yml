@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: swgw_api_development
+  database: swgw_api_production
   username: swgw_api
   password: <%= ENV['SWGW_API_DATABASE_PASSWORD'] %>
