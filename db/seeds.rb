@@ -200,7 +200,7 @@ def seed_characters
     end
 end
 
-# seed_categories
+seed_categories
 # seed_home_world
 # seed_species
 seed_characters
